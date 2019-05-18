@@ -1,0 +1,20 @@
+food_id,name,calorie,has_image,menu_price,material_cost,category
+2,Gyoza,200,1,6.99,2.99,Appetizers
+3,Edamame,300,1,6.99,3.99,Appetizers
+4,YAKITORI,400,0,4.99,2.99,Appetizers
+5,"SPRING ROLL",560,0,4.99,3.99,Appetizers
+6,HAKODATE,890,0,10.99,7.99,Noodles
+7,SAPPORO,540,1,12.99,9.99,Noodles
+8,KITAKATA,1200,1,12.99,7.99,Noodles
+9,"CHUKA SOBA",980,0,10.99,5.99,Noodles
+10,TSUKEMEN,780,1,12.99,10.99,Noodles
+11,TAKAYAMA,1300,0,10.99,8.99,Noodles
+12,"CALIFORNIA ROLL",750,1,12.99,7.99,Sushi
+13,"SPIDER ROLL",640,0,10.99,9.99,Sushi
+14,"TUNA SUSHI",890,1,12.99,7.99,Sushi
+15,"DYNAMITE ROLL",780,0,10.99,5.99,Sushi
+16,"PHILADELPHIA ROLL",980,1,12.99,10.99,Sushi
+17,"SEATTLE ROLL",780,0,10.99,8.99,Sushi
+18,COKE,150,1,2.99,0.99,Beverage
+19,BEER,99,1,4.99,2.99,Beverage
+20,TEA,100,1,2.99,1.99,Beverage

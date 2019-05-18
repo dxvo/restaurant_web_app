@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>DJ Cafe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+    <link rel="stylesheet" href="../static/css/templatemo-style.css">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('menu') }}" >Menu</a>
+  <a href="{{ url_for('contact')}}">Contact Us</a>
+  <a href="{{ url_for('login') }}">Manager Access</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Navigation Sidebar</button>
+
+<figure>
+    <img src="../static/img/banner.gif" alt="Header image" class="img-fluid" 
+    style="padding-top:20px; width: auto;">
+</figure>
+
+<div class="tm-content-div">
+    <!-- Welcome section -->
+    <section id="welcome" class="tm-section">
+        <header>
+            <h2 class="tm-blue-text tm-welcome-title tm-margin-b-25" style="text-align: center;">
+            <strong>Welcome to DJ Cafe</strong>
+        </h2>
+        </header>
+        <p>Our restaurant offers a wide array of authentic Asian Food. Try our delicious foods and service today. If you have any suggestion to our food or service, please contact us and leave us your suggestion or review. We will respond to your suggestion as soon as possible.</p>
+    </section>
+    <!-- About section -->
+    <section id="about" class="tm-section">
+        <div class="row">                                                                
+            <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 push-lg-4 push-md-5">
+                <header>
+                    <h2 class="tm-blue-text tm-section-title tm-margin-b-10" style="text-align: center;">
+                        <strong>About Us</strong>
+                    </h2>
+                </header>
+                <p>We have one goal — making sure that everyone feels taken care of. Finding a few moments to enjoy life is hard, so we’re here to make sure that you get the most of your time with us. This is a place where friends, families, and sports lovers with an appetite can come together to celebrate the big victories and the little wins over a great meal.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pull-lg-8 pull-md-7 tm-about-img-container">
+                <img src="../static/img/logo.gif" alt="Image" class="img-fluid" style="height:350px;">    
+            </div>  
+        </div>                            
+    </section>
+</div>
+
+
+<hr>
+<header> 
+    <h2 class="tm-blue-text tm-section-title tm-margin-b-10" style="padding-bottom: 20px;"> 
+        <strong>Meet The Team </strong></h2>
+</header>
+
+
+     <div class="col-lg-6">
+            <div class="card">
+              <img src="../static/img/dog1.gif" alt="De" style="width:100%">
+              <div class="container">
+                <h2>De Vo</h2>
+                <p class="title">CEO &amp; Founder</p>
+                <p>Rice ABCD </p>
+                <p>abc@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card">
+          <img src="../static/img/dog2.gif" alt="Jin" style="width:100%">
+          <div class="container">
+            <h2>Jinwoo </h2>
+            <p class="title"> Director</p>
+            <p>Rice DEFG</p>
+            <p>dfg@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+     
+</div>
+                
+        <!-- load JS files -->
+        <script src="../static/js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="../static/js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script src="../static/js/jquery.singlePageNav.min.js"></script>     <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+             
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
